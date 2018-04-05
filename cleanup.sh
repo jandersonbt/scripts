@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ensure script is run as root
-if [[ "$EUID" > 0 ]]
+if [[ $EUID > 0 ]]
   then echo "Please run this script as root!"
   exit
 fi
